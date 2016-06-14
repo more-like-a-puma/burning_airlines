@@ -27,14 +27,14 @@ When a seat is saved, the available seats on the `/flights` page should update.
 
 
 ##Models
-There are models for Airplane, Flight, User, and Reservation.
+There are models for Airplane, Flight, User, and Reservation. `DONE.`
 
-An Airplane has many Flights and a Flight belongs to an Airplane.
+An Airplane has many Flights and a Flight belongs to an Airplane. `DONE.`
 
-A User has many Reservations and a Reservation belongs to a User.
+A User has many Reservations and a Reservation belongs to a User. `DONE.`
 
-A Flight has many Reservations and a Reservation belongs to a Flight.
+A Flight has many Reservations and a Reservation belongs to a Flight. `DONE.`
 
-The Reservation table is a join table between Users and Flights, which have a many-to-many relationship through Reservations.
+The Reservation table is a join table between Users and Flights, which have a many-to-many relationship through Reservations. `DONE.`
 
-The Airplane model has rows and columns to determine the configuration of the plane; the Airplane model has a row and a column for a particular seat.
+The Airplane model has rows and columns to determine the configuration of the plane; the Airplane model has a row and a column for a particular seat. `DONE.`
