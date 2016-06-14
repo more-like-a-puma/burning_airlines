@@ -26,7 +26,7 @@ A user can select a seat.
 When a seat is saved, the available seats on the `/flights` page should update.
 
 
-#Models
+##Models
 There are models for Airplane, Flight, User, and Reservation.
 
 An Airplane has many Flights and a Flight belongs to an Airplane.
