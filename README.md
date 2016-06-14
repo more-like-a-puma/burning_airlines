@@ -4,7 +4,7 @@
 
 An admin can create planes on the `/airplanes` page.
 
-A plan has a name, rows, and columns.
+A plane has a name, rows, and columns.
 
 When a new plane is saved the page should show a seating diagram.
 
