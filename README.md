@@ -2,28 +2,28 @@
 
 ##Requirements
 
-An admin can create planes on the `/airplanes` page.
+An admin can create planes on the `/airplanes` page. `JESS`
 
-A plane has a name, rows, and columns. 
+A plane has a name, rows, and columns. `DONE.` `JANE`
 
-When a new plane is saved the page should show a seating diagram.
+When a new plane is saved the page should show a seating diagram. `DONE.` `JANE`
 
-An admin can create flights on the `/flights` page.
+An admin can create flights on the `/flights` page. `JESS`
 
-A flight has a flight number, origin, destination, date, and plane.
+A flight has a flight number, origin, destination, date, and plane. `DONE.` `JANE & JESS`
 
 When a new flight is saved, the page should show a list with the newest date at the top of the list and the number of available seats on the plane.
 
-A user can search for flights on the `/search` page.
-The search page should have an input form for the origin and destination.
-When a user creates a search, the page should show a list of flights with the newest date at the top, and include the number of available seats on the flight.
+A user can search for flights on the `/search` page. `FABIO & JESS`
+The search page should have an input form for the origin and destination. `in the nav bar - FABIO`
+When a user creates a search, the page should show a list of flights with the newest date at the top, and include the number of available seats on the flight. `FABIO (main#show)`
 
-When the user selects a flight, we should go to the show page ie, `/flights/3`.
-The plane show page should show a seating diagram with available seats and seats that have been selected, with their names.
+When the user selects a flight, we should go to the show page ie, `/flights/3`. `FABIO`
+The plane show page should show a seating diagram with available seats and seats that have been selected, with their names. `JANE`
 
-A user can select a seat.
+A user can select a seat. `JANE`
 
-When a seat is saved, the available seats on the `/flights` page should update.
+When a seat is saved, the available seats on the `/flights` page should update. `JANE`
 
 
 ##Models
