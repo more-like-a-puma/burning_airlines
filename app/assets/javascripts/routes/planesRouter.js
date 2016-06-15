@@ -1,4 +1,3 @@
-// Namespace our flowerApp
 var app = app || {};
 
 app.planesRouter = Backbone.Router.extend({
