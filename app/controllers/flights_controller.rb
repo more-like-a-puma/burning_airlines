@@ -10,6 +10,9 @@ class FlightsController < ApplicationController
   # GET /flights/1
   # GET /flights/1.json
   def show
+    @flight = Flight.find(params[:id])
+    @plane_id = Plane.find(params[:id])
+    @plane_ids = Plane.all
   end
 
   # GET /flights/new
@@ -28,7 +31,7 @@ class FlightsController < ApplicationController
 
     respond_to do |format|
       if @flight.save
-        format.html { redirect_to @flight, notice: 'Flight was successfully created.' }
+        format.html { redirect_to @flight, notice: 'Flight route was successfully created.' }
         format.json { render :show, status: :created, location: @flight }
       else
         format.html { render :new }
@@ -42,7 +45,7 @@ class FlightsController < ApplicationController
   def update
     respond_to do |format|
       if @flight.update(flight_params)
-        format.html { redirect_to @flight, notice: 'Flight was successfully updated.' }
+        format.html { redirect_to @flight, notice: 'Flight route was successfully updated.' }
         format.json { render :show, status: :ok, location: @flight }
       else
         format.html { render :edit }
@@ -56,7 +59,7 @@ class FlightsController < ApplicationController
   def destroy
     @flight.destroy
     respond_to do |format|
-      format.html { redirect_to flights_url, notice: 'Flight was successfully destroyed.' }
+      format.html { redirect_to flights_url, notice: 'Flight route was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
