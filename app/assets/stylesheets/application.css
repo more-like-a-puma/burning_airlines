@@ -33,6 +33,22 @@ body {
   padding-top: 10px;
 }
 
+#searchButtons {
+  padding-top: 10px;
+}
+
+#selectors select {
+  /*color:#fff;
+  background: #f00;*/
+  font-size: 1.8em;
+  /*font-weight: bold;*/
+  margin-top: q0px;
+  padding-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #000;
+  text-align: right;
+}
+
 #searchForm {
   height: 180px;
   margin: auto 40px;
