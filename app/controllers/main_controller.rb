@@ -2,7 +2,15 @@ class MainController < ApplicationController
   before_action :fetch_user
 
   def new
-    # Show the login form
+    redirect_to homepage_path
+  end
+
+  def index
+    redirect_to homepage_path
+  end
+
+  def edit
+    redirect_to homepage_path
   end
 
   def home
