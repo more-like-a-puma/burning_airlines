@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  # root :to => 'users#new'
-  root 'main#home'
+  root :to => 'users#new'
 
   resources :users
   resources :reservations
   resources :planes
   resources :flights
+  resources :main
 
 end
