@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :main
 
   get '/homepage' => 'main#home'
-  get '/search' => 'main#show'
+  get '/searchresults' => 'main#show'
   get '/signup' => 'users#new'
   get '/login' => 'session#new'
   post '/login' => 'session#create'
