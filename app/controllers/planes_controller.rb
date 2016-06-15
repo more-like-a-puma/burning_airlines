@@ -1,5 +1,7 @@
 class PlanesController < ApplicationController
+  before_action :authorize, :except => [:index, :show]
   before_action :set_plane, only: [:show, :edit, :update, :destroy]
+
 
   # GET /planes
   # GET /planes.json
@@ -65,6 +67,12 @@ class PlanesController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_plane
       @plane = Plane.find(params[:id])
+    end
+
+    def authorize
+      if !@admin
+        redirect_to root_path
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
