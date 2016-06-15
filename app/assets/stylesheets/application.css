@@ -14,6 +14,10 @@
  *= require_self
  */
 
+body {
+  margin: 0;
+}
+
 #main{
   height: 550px;
   width: 900px;
@@ -64,4 +68,41 @@
   padding-right: 10px;
   border-radius: 6px;
   border: 1px solid #000;
+}
+
+#navbar {
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline;
+}
+
+#navbar li {
+  text-decoration: none;
+  display: inline;
+  padding: 8px 20px;
+}
+
+.textHead {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepageYo {
+  align-self: center;
+  margin: 0;
+  font-family: 'Finger Paint', cursive;
+  text-align: center;
+}
+
+.homepageYo h1 {
+  font-size: 70px;
+}
+
+#burnbaby {
+  font-family: 'Akronim', cursive;
+  color: red;
 }

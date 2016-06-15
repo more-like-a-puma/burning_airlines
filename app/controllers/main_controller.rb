@@ -2,15 +2,15 @@ class MainController < ApplicationController
   before_action :fetch_user
 
   def new
-    redirect_to homepage_path
+    redirect_to root_path
   end
 
   def index
-    redirect_to homepage_path
+    redirect_to root_path
   end
 
   def edit
-    redirect_to homepage_path
+    redirect_to root_path
   end
 
   def home
