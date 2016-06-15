@@ -50,9 +50,9 @@
   text-align: right;
 
 }
-#searchFlightsBackbone label{
+#main h3{
   color:#f00;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
   padding-right: 10px;
 }
@@ -70,7 +70,7 @@
   padding-left: 15px;
   text-align: left;
 }
-#searchForm input{
+#searchForm select{
   color:#000;
   background: #fff;
   font-size: 1.8em;

@@ -1,12 +1,13 @@
 <div id="main">
-    <form id="searchFlightsBackbone" action="submit">
-        <label>Burning Airlines</label>
-        <button>Search Flights</button>
-    </form>
+    <h3>Burning Airlines</h3>
     <form id="searchForm" action="submit">
         <div>
-            <input type="text" name="origin" value="" placeholder="From">
-            <input type="text" name="destination" value="" placeholder="To">
+            <select id="origin">
+                <option value="from">From</option>
+            </select>
+            <select id="destination">
+                <option value="to">To</option>
+            </select>
         </div>
         <div>
             <button>Save</button>
