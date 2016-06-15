@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'main#show'
+  root :to => 'main#home'
 
   resources :users
   resources :reservations
