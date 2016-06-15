@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   resources :main
 
   get '/homepage' => 'main#home'
-  get '/search' => 'main#show' # BACKBONE SHOULD START
   get '/searchresults' => 'main#show'
   get '/signup' => 'users#new'
   get '/login' => 'session#new'
