@@ -56,12 +56,8 @@ body {
   padding-right: 40px;
   text-align: right;
 }
-<<<<<<< HEAD
 
 #searchFlightsBackbone label {
-=======
-#main h3{
->>>>>>> 89cbc6f8cbdefe71551a7b06b97baa0f3f795360
   color:#f00;
   font-size: 2em;
   font-weight: bold;
@@ -120,12 +116,9 @@ body {
   padding-left: 15px;
   text-align: left;
 }
-<<<<<<< HEAD
+
 
 #searchForm input {
-=======
-#searchForm select{
->>>>>>> 89cbc6f8cbdefe71551a7b06b97baa0f3f795360
   color:#000;
   background: #fff;
   font-size: 1.8em;
