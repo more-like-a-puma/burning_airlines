@@ -11,8 +11,13 @@ class FlightsController < ApplicationController
   # GET /flights/1.json
   def show
     @flight = Flight.find(params[:id])
-    @plane_id = Plane.find(params[:id])
-    @plane_ids = Plane.all
+    # plane id should look for the relationship in flights,
+    # not the param (BC)
+    # @plane_id = Plane.find(params[:id])
+    plane = Plane.where(:name => @flight.plane_id).first()
+    @planeRows = plane.rows
+    @planeColumns = plane.columns
+    # @plane_ids = Plane.all
   end
 
   # GET /flights/new

@@ -2,5 +2,16 @@
 
 <%= render 'form' %>
 
+<tbody>
+  <% for i in 0..@flights.row %>
+    <tr>
+      <td><%= flight.origin %></td>
+      <td><%= puts 'i' %></td>
+
+    </tr>
+  <% end %>
+</tbody>
+
+
 <%= link_to 'Show', @flight %> |
 <%= link_to 'Back', flights_path %>
