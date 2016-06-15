@@ -5,11 +5,12 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Akronim|Anaheim|Eater|Finger+Paint|Jolly+Lodger" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <nav>
+    <nav id="navbar">
      <div class="nav-wrapper blue-grey lighten-3">
        <ul id="nav-mobile" class="right hide-on-med-and-down">
          <li><%= link_to "Home", root_path %> </li>
