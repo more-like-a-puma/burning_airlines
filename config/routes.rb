@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root :to => 'users#new'
+  # root :to => 'users#new'
+  root 'main#home'
 
   resources :users
   resources :reservations
