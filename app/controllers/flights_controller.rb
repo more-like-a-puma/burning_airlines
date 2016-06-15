@@ -22,6 +22,7 @@ class FlightsController < ApplicationController
 
   # GET /flights/1/edit
   def edit
+    @plane_ids = Plane.all
   end
 
   # POST /flights
