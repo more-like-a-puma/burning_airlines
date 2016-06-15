@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   resources :flights
   resources :main
 
+  if @admin
+    get '/users' => 'users#index'
+  end
   get '/homepage' => 'main#home'
   get '/searchresults' => 'main#show'
   get '/signup' => 'users#new'

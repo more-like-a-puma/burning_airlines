@@ -1,11 +1,10 @@
 class UsersController < ApplicationController
-  before_action :authorize, :except => [:index]
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.all 
   end
 
   # GET /users/1
@@ -81,4 +80,5 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :password, :password_confirmation, :email, :admin)
     end
+
 end
