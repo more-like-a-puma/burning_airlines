@@ -1,4 +1,6 @@
+$(document).ready(function() {
 
-var flightRouter = new app.planesRouter();
+    var flightRouter = new app.planesRouter();
+    Backbone.history.start();
 
-Backbone.history.start();
+});

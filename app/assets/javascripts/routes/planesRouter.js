@@ -15,10 +15,13 @@ app.planesRouter = Backbone.Router.extend({
 
     index: function() {
         console.log("index");
+        $("#main").html("<h4>"+"Index");
     },
 
     flightDetailsMessage: function() {
         console.log("flightDetailsMessage");
+        var flightDetailsView = new app.flightDetailsView();
+        flightDetailsView.render();
     },
 
     naivgationMessage: function() {
