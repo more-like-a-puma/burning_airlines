@@ -1,4 +1,5 @@
 class FlightsController < ApplicationController
+  before_action :authorize, :except => [:index, :show, :book]
   before_action :set_flight, only: [:show, :edit, :update, :destroy]
 
   # GET /flights
@@ -70,6 +71,10 @@ class FlightsController < ApplicationController
     end
   end
 
+  def book
+    # This is where the information needed to book a reservation will go
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_flight
@@ -79,5 +84,11 @@ class FlightsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def flight_params
       params.require(:flight).permit(:origin, :destination, :date, :plane_id)
+    end
+
+    def authorize
+      if !@admin
+        redirect_to root_path
+      end
     end
 end

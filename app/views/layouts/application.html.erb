@@ -11,28 +11,62 @@
 
 <nav>
  <div class="nav-wrapper blue-grey lighten-3">
-  <a href="/" class="brand-logo left"></a>
+
    <ul id="nav-mobile" class="right hide-on-med-and-down">
-     <%# if !@current_user %>
-     <li><%# link_to "Create an account", new_user_path%></li>
-     <li><%# link_to "Login", login_path %></li>
-     <%# end %>
-     <%# if @current_user && !@admin%>
-     <li>
-       <%# link_to "Orders", order_index_path %>
-       <!-- <i class="material-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Orders" ">reorder</i> -->
-       <%# end %>
+     <li><%= link_to "Home", root_path %> </li>
+
+       <% if @current_user %>
+        <% if @admin %>
+         <li><%= link_to "Profile List", users_path %></li>
+          <li><%= link_to "New Plane", new_plane_path %></li>
+          <li><%= link_to "Plane List", planes_path %></li>
+          <li><%= link_to "New Flight", new_flight_path %></li>
+        <% end %>
+        <li><%= link_to "Your Profile", @current_user %></li>
+        <li><%= link_to "Reservations", reservations_path %></li>
+        <li><%= link_to "Search", searchresults_path %></li>
+        <li><%= link_to "All Flight Details", flights_path %></li>
+        <li><%= link_to "Log out", logout_path, :method => :delete %></li>
+       <% else %>
+         <li><%= link_to "Create Profile", new_user_path %></li>
+         <li><%= link_to "Log In", login_path %></li>
+       <% end %>
+     <li class="sign_in">
+       <% if @current_user %>
+         Signed in as <%= @current_user.name %>
+       <% end %>
      </li>
-     <!-- <li><a href="sass.html"><i class="material-icons">search</i></a></li> -->
-     <li><a class="dropdown-button" data-activates="dropdown1">Users</a></li>
-      <%# end %>
-
-
-
- </ul>
+   </ul>
  </div>
 </nav>
 </header>
+
+<nav>
+
+  <!-- <div class="bottom_nav">
+    <% if flash[:success] %>
+      <p><%= flash[:success] %></p>
+    <% end %>
+    <% if flash[:error] %>
+      <p><%= flash[:error] %></p>
+    <% end %>
+  </div>
+</nav> -->
+
+<!-- <%# if !@current_user %>
+<li><%# link_to "Create an account", new_user_path%></li>
+<li><%# link_to "Login", login_path %></li>
+<%# end %>
+<%# if @current_user && !@admin%>
+<li> -->
+  <%# link_to "Orders", order_index_path %>
+  <!-- <i class="material-icons tooltipped data-position="bottom" data-delay="50" data-tooltip="Orders" ">reorder</i> -->
+  <%# end %>
+<!-- </li> -->
+<!-- <li><a href="sass.html"><i class="material-icons">search</i></a></li> -->
+<!-- <li><a class="dropdown-button" data-activates="dropdown1">Users</a></li>
+ <%# end %> -->
+
 
 <%= yield %>
 
