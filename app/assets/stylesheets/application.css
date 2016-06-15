@@ -65,3 +65,28 @@
   border-radius: 6px;
   border: 1px solid #000;
 }
+#searchForm{
+  padding-top:15px;
+  padding-left: 15px;
+  text-align: left;
+}
+#searchForm input{
+  color:#000;
+  background: #fff;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  /*padding-right: 10px;*/
+  border-radius: 6px;
+  border: 2px solid #000;
+}
+#searchForm button{
+  color:#fff;
+  background: #f00;
+  font-size: 1.8em;
+  /*font-weight: bold;*/
+  margin-top: q0px;
+  padding-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #000;
+  text-align: right;
+}

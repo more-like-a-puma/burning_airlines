@@ -2,15 +2,20 @@
     <form id="searchFlightsBackbone" action="submit">
         <label>Burning Airlines</label>
         <button>Search Flights</button>
-        <div id="searchForm">
-
-        <input type="button" name="name" value="" placeholder="From">
-        <input type="button" name="name" value="" placeholder="To">
-      </div>
+    </form>
+    <form id="searchForm" action="submit">
+        <div>
+            <input type="text" name="origin" value="" placeholder="From">
+            <input type="text" name="destination" value="" placeholder="To">
+        </div>
+        <div>
+            <button>Save</button>
+            <button>Cancel</button>
+        </div>
     </form>
     <div id="searchResults">
         <h3>Flight Search Results</h3>
-        
+
         <div id="searchResultsTabulated"></div>
     </div>
 
