@@ -26,10 +26,11 @@
 <table>
   <tbody>
     <% for i in 1..@planeRows %>
-
+        <% letter_array = ("a"..."z").to_a %>
+        <% @letter = letter_array[i-1] %>
       <tr>
         <% for i in 1..@planeColumns %>
-          <td><%= i %></td>
+          <td><%=   i.to_s + @letter.upcase   %></td>
         <% end %>
       </tr>
     <% end %>
