@@ -18,28 +18,30 @@ body {
   margin: 0;
 }
 
-#main{
+#main {
   height: 550px;
   width: 900px;
   margin: 0 auto;
   border: 2px solid #f00;
   border-radius: 25px;
 }
-#main h3{
+
+#main h3 {
   color:#f00;
   text-align: center;
   padding-top: 10px;
 }
-#searchForm{
+
+#searchForm {
   height: 180px;
   margin: auto 40px;
   border: 2px solid #f00;
 }
-#searchResults h3{
+
+#searchResults h3 {
   color: #000;
   text-align: left;
   margin-left: 40px;
-
 }
 
 #searchResultsTabulated {
@@ -47,20 +49,22 @@ body {
   margin: auto 40px;
   height: 180px;
 }
-#searchFlightsBackbone{
+
+#searchFlightsBackbone {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 40px;
   text-align: right;
-
 }
-#searchFlightsBackbone label{
+
+#searchFlightsBackbone label {
   color:#f00;
   font-size: 1.5em;
   font-weight: bold;
   padding-right: 10px;
 }
-#searchFlightsBackbone button{
+
+#searchFlightsBackbone button {
   color:#fff;
   background: #f00;
   font-size: 2em;
@@ -69,7 +73,6 @@ body {
   border-radius: 6px;
   border: 1px solid #000;
 }
-<<<<<<< HEAD
 
 #navbar {
   text-align: center;
@@ -106,13 +109,15 @@ body {
 #burnbaby {
   font-family: 'Akronim', cursive;
   color: red;
-=======
-#searchForm{
+}
+
+#searchForm {
   padding-top:15px;
   padding-left: 15px;
   text-align: left;
 }
-#searchForm input{
+
+#searchForm input {
   color:#000;
   background: #fff;
   font-size: 1.8em;
@@ -121,7 +126,8 @@ body {
   border-radius: 6px;
   border: 2px solid #000;
 }
-#searchForm button{
+
+#searchForm button {
   color:#fff;
   background: #f00;
   font-size: 1.8em;
@@ -131,5 +137,4 @@ body {
   border-radius: 6px;
   border: 1px solid #000;
   text-align: right;
->>>>>>> 4ed25be6ca85f720026e100070f3f1ba0b7c1206
 }

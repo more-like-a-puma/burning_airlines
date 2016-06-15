@@ -12,6 +12,7 @@ class PlanesController < ApplicationController
   # GET /planes/1
   # GET /planes/1.json
   def show
+    @plane = Plane.find(params[:id])
   end
 
   # GET /planes/new
@@ -21,6 +22,7 @@ class PlanesController < ApplicationController
 
   # GET /planes/1/edit
   def edit
+    @plane = Plane.find(params[:id])
   end
 
   # POST /planes

@@ -10,6 +10,7 @@ class ReservationsController < ApplicationController
   # GET /reservations/1
   # GET /reservations/1.json
   def show
+    @reservation
   end
 
   # GET /reservations/new
@@ -19,6 +20,7 @@ class ReservationsController < ApplicationController
 
   # GET /reservations/1/edit
   def edit
+    @reservation
   end
 
   # POST /reservations
