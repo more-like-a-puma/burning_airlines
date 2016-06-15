@@ -3,13 +3,19 @@ var app = app || {};
 app.planesRouter = Backbone.Router.extend({
 
     routes: {
-        "": "index",
+        "": "showSearchPage",
+        "search" : "showSearchPage",
+        "flights/:id" : "showFlight",
         "flightDetailsView": "flightDetailsMessage",
         "navigationView": "naivgationMessage",
         "reservationView": "reservationMessage",
         "searchFormView": "searchFormMessage",
         "searchResultView": "searchResultMessage",
         "seatView": "seatMessage"
+    },
+
+    showFlight: function (id) {
+      console.log( id );
     },
 
     index: function() {
