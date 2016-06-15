@@ -9,6 +9,8 @@ class ApplicationController < ActionController::Base
    def fetch_user
     @current_user = User.find_by( :id => session[:user_id] )
     session[:user_id] = nil unless @current_user
+    @admin = @current_user && @current_user.admin
+    # binding.pry
    end
-   
+
 end
