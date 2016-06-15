@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root :to => 'users#new'
+  root :to => 'main#home'
 
   resources :users
   resources :reservations
@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   resources :flights
   resources :main
 
-  get '/search' => 'flights#home'
+  get '/homepage' => 'main#home'
+  get '/searchresults' => 'main#show'
   get '/signup' => 'users#new'
   get '/login' => 'session#new'
   post '/login' => 'session#create'
