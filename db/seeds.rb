@@ -5,8 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-<<<<<<< .merge_file_6He3q7
-=======
 
 
 #
@@ -73,4 +71,3 @@ Reservation.destroy_all
 r1 = Reservation.create :user_id => u4.id, :flight_id => f1.id, :row => 1, :column => 3
 r2 = Reservation.create :user_id => u2.id, :flight_id => f2.id, :row => 1, :column => 3
 r3 = Reservation.create :user_id => u4.id, :flight_id => f2.id, :row => 1, :column => 3
->>>>>>> .merge_file_d3GDTK
