@@ -20,7 +20,7 @@
           <!-- <td><%= @current_user.name %></td> -->
           <td><%= reservation.flight.flightnum %></td>
           <td><%= reservation.flight.date %></td>
-          <td><%= reservation.row.to_s + reservation.column.to_s %></td>
+          <td><%= reservation.row.to_s + @alphabet[reservation.column.to_i-1] %></td>
           <!-- <td><%= reservation.column %></td> -->
           <!-- <td><%= link_to 'Show', reservation %></td> -->
           <!-- <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td> -->

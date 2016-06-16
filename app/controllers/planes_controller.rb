@@ -13,6 +13,11 @@ class PlanesController < ApplicationController
   # GET /planes/1.json
   def show
     @plane = Plane.find(params[:id])
+    plane = Plane.where(:name => Flight.plane_id).first()
+    @planeRows = plane.rows
+    @planeColumns = plane.columns
+    
+
   end
 
   # GET /planes/new

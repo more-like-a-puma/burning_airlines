@@ -15,5 +15,22 @@
   <%= @plane.columns %>
 </p>
 
+
+<h2>Seating plan for this plane</h2>
+<table>
+  <tbody>
+    <% for i in 1..@planeRows %>
+        <% letter_array = ("a"..."z").to_a %>
+        <% @letter = letter_array[i-1] %>
+      <tr>
+        <% for i in 1..@planeColumns %>
+          <td><%=   i.to_s + @letter.upcase   %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
 <%= link_to 'Edit', edit_plane_path(@plane) %> |
 <%= link_to 'Back', planes_path %>
