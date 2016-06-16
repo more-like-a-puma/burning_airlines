@@ -3,13 +3,14 @@ var app = app || {};
 
 app.searchResultsView = Backbone.View.extend({
 
-    // el: '#origin',
 
-    // initialize: function() {
-    //     this.collection = new app.FlightsCollection();
-    //     this.collection.on('click', this.render, this);
-    //     this.collection.fetch();
-    // },
+    el: '#origin',
+
+    initialize: function() {
+        // this.collection = new app.FlightsCollection();
+        this.collection.on('add', this.render, this);
+        this.collection.fetch();
+    },
 
     render: function() {
 
@@ -20,3 +21,8 @@ app.searchResultsView = Backbone.View.extend({
     }
 
 });
+
+// var searchResultView = new app.SearchResultsView({
+//   collection: app.flights
+// })
+// searchResultView.render();
