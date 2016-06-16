@@ -6,7 +6,7 @@ An admin can create planes on the `/airplanes` page. `DONE.`
 
 A plane has a name, rows, and columns. `DONE.`
 
-When a new plane is saved the page should show a seating diagram. `JANE`
+When a new plane is saved the page should show a seating diagram. `DONE.`
 
 An admin can create flights on the `/flights` page. `DONE.`
 
