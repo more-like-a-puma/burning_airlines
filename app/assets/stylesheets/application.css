@@ -139,7 +139,7 @@ body {
 #searchForm input {
   color:#000;
   background: #fff;
-  font-size: 1.8em;
+  /*font-size: 1.8em;*/
   text-transform: uppercase;
   /*padding-right: 10px;*/
   border-radius: 6px;
@@ -149,13 +149,20 @@ body {
 #searchForm button {
   color:#fff;
   background: #f00;
-  font-size: 1.8em;
+  /*font-size: 1.8em;*/
   /*font-weight: bold;*/
   margin-top: q0px;
   padding-right: 10px;
   border-radius: 6px;
   border: 1px solid #000;
   text-align: right;
+}
+
+/*Fabio add this*/
+
+#fligthsResults li{
+   list-style-type:none;
+   color: #000;
 }
 
 .formYo {

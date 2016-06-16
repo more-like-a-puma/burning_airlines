@@ -27,12 +27,15 @@ app.searchResultsView = Backbone.View.extend({
     },
 
     exeSearch: function() {
-      app.origin = $("input[name='origin']").val();
-      app.destination = $("input[name='destination']").val();
-      app.flight.findWhere({ destination: app.destination, origin: app.origin });
+
         console.log("searchResultsView should be rendered now");
         var searchResultsView = $("#searchResultTemplate").html();
         $("#searchResultsTabulated").html(searchResultsView);
+        app.origin = $("input[name='origin']").val().toUpperCase();
+        app.destination = $("input[name='destination']").val().toUpperCase();
+
+        app.renderSearchResults = new app.auxSearchResultView();
+        app.renderSearchResults.render();
     }
 
 });
