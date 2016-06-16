@@ -21,12 +21,12 @@
   <tbody>
     <% plane_rows_array = 1..@planeRows %>
     <% plane_columns_array = 1..@planeColumns %>
-    <% plane_rows_array.to_a.each_with_index do |val, i| %>
+    <% plane_columns_array.to_a.each_with_index do |val, i| %>
         <!-- <% letter_array = ("a"..."z").to_a %> -->
-        <% letter = @alphabet[i] %>
+        <% letter = @alphabet[i].to_s %>
       <tr>
-        <% plane_columns_array.to_a.each_with_index do |val, i| %>
-          <td><%= i.to_s + letter %></td>
+        <% plane_rows_array.to_a.each_with_index do |val, i| %>
+          <td><%= (i + 1).to_s + letter %></td>
         <% end %>
       </tr>
     <% end %>
