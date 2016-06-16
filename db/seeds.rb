@@ -17,11 +17,11 @@
 
 
 Flight.destroy_all
-f1 = Flight.create :plane_id => 'AA100', :origin => 'MEL', :destination => 'SYD', :date => '01/01/2016 17:00'
-f2 = Flight.create :plane_id => 'QF110', :origin => 'BNE', :destination => 'MEL', :date => '02/01/2016 08:00'
-f3 = Flight.create :plane_id => 'AF100', :origin => 'SYD', :destination => 'BNE', :date => '01/01/2016 17:00'
-f4 = Flight.create :plane_id => 'QY111', :origin => 'PER', :destination => 'MEL', :date => '01/01/2016 15:00'
-f5 = Flight.create :plane_id => 'RY123', :origin => 'SYD', :destination => 'PER', :date => '02/01/2016 13:00'
+f1 = Flight.create :plane_id => '1', :origin => 'MEL', :destination => 'SYD', :date => '01/01/2016 17:00', :flightnum => 'JQ415'
+f2 = Flight.create :plane_id => '4', :origin => 'BNE', :destination => 'MEL', :date => '02/01/2016 08:00', :flightnum => 'QF112'
+f3 = Flight.create :plane_id => '3', :origin => 'SYD', :destination => 'BNE', :date => '01/01/2016 17:00', :flightnum => 'SD784'
+f4 = Flight.create :plane_id => '2', :origin => 'PER', :destination => 'MEL', :date => '01/01/2016 15:00', :flightnum => 'EM723'
+f5 = Flight.create :plane_id => '2', :origin => 'SYD', :destination => 'PER', :date => '02/01/2016 13:00', :flightnum => 'AO220'
 
 # create_table "planes", force: :cascade do |t|
 #   t.string   "name"

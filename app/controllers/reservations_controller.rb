@@ -4,23 +4,33 @@ class ReservationsController < ApplicationController
   # GET /reservations
   # GET /reservations.json
   def index
-    @reservations = Reservation.all
+    unless @current_user
+      @reservations = Reservation.all
+      @flights = Flight.all
+    else
+      @reservations = @current_user.reservations
+      @flights = Flight.all
+    end
+    #@user = User.find(params[:id])
   end
 
   # GET /reservations/1
   # GET /reservations/1.json
   def show
     @reservation
+    @user
   end
 
   # GET /reservations/new
   def new
     @reservation = Reservation.new
+    @flights = Flight.all
   end
 
   # GET /reservations/1/edit
   def edit
     @reservation
+    @flights = Flight.all
   end
 
   # POST /reservations
@@ -77,6 +87,6 @@ class ReservationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def reservation_params
-      params.require(:reservation).permit(:user_id, :flight_id, :row, :column)
+      params.require(:reservation).permit(:user_id, :flightnum, :flight_id, :row, :column)
     end
 end

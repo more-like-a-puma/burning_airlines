@@ -94,7 +94,7 @@ body {
 #navbar {
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 24px;
   display: inline;
 }
 
@@ -155,4 +155,19 @@ body {
   border-radius: 6px;
   border: 1px solid #000;
   text-align: right;
+}
+
+.formYo {
+  font-size: 18px;
+  margin: 30px;
+}
+
+.allReservations {
+  font-size: 18px;
+  margin: 30px;
+}
+
+.allReservations th, .allReservations td {
+  padding-right: 20px;
+  padding-bottom: 15px;
 }

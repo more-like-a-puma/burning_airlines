@@ -2,17 +2,17 @@
 
 ##Requirements
 
-An admin can create planes on the `/airplanes` page. `JESS`
+An admin can create planes on the `/airplanes` page. `DONE.` `JESS`
 
 A plane has a name, rows, and columns. `DONE.` `JANE`
 
 When a new plane is saved the page should show a seating diagram. `DONE.` `JANE`
 
-An admin can create flights on the `/flights` page. `JESS`
+An admin can create flights on the `/flights` page. `DONE.` `JESS`
 
 A flight has a flight number, origin, destination, date, and plane. `DONE.` `JANE & JESS`
 
-When a new flight is saved, the page should show a list with the newest date at the top of the list and the number of available seats on the plane.
+When a new flight is saved, the page should show a list with the newest date at the top of the list and the number of available seats on the plane. `FABIO`
 
 A user can search for flights on the `/search` page. `FABIO & JANE`
 The search page should have an input form for the origin and destination. `in the nav bar - FABIO`
