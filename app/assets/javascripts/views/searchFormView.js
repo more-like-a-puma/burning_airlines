@@ -1,5 +1,22 @@
 var app = app || {};
 
-app.flights = new app.FlightsCollection();
+app.searchFormView = Backbone.View.extend({
 
-app.flights.fetch();
+el: 'select',
+
+initialize: function() {
+    console.log("Initialization searchFormView");
+    this.collection = new app.FlightsCollection();
+    this.collection.on('focus', this.render, this);
+    this.collection.fetch();
+}
+    // render: function() {
+    //     _.each(this.collection.models, function(item) {
+    //         this.$el.append(new ItemView({
+    //             model: item
+    //         }).render().el);
+    //     }, this);
+    //     return this;
+    // }
+});
+  
