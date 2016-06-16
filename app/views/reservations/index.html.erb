@@ -4,11 +4,12 @@
 
   <table class="showReservations">
     <thead>
-      <tr>
+      <tr class="alignTextLeft">
         <!-- <th>User</th> -->
         <th>Flight</th>
-        <th>Row</th>
-        <th>Column</th>
+        <th>Date</th>
+        <th>Seat</th>
+        <!-- <th>Column</th> -->
         <th colspan="3"></th>
       </tr>
     </thead>
@@ -17,12 +18,13 @@
       <% @reservations.each do |reservation| %>
         <tr>
           <!-- <td><%= @current_user.name %></td> -->
-          <td><%= reservation.flight_id %></td>
-          <td><%= reservation.row %></td>
-          <td><%= reservation.column %></td>
+          <td><%= reservation.flight.flightnum %></td>
+          <td><%= reservation.flight.date %></td>
+          <td><%= reservation.row.to_s + reservation.column.to_s %></td>
+          <!-- <td><%= reservation.column %></td> -->
           <!-- <td><%= link_to 'Show', reservation %></td> -->
-          <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
-          <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <!-- <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td> -->
+          <td><%= link_to 'Delete', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
