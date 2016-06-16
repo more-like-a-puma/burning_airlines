@@ -7,7 +7,6 @@ app.searchResultsView = Backbone.View.extend({
 
     events: {
         "submit": "test"
-        "cancel": "cancel"
     },
 
     test: function(event) {
