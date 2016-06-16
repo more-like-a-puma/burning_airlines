@@ -12,6 +12,7 @@ class ReservationsController < ApplicationController
       @flights = Flight.all
     end
     #@user = User.find(params[:id])
+    @alphabet = ("A".."Z").to_a
   end
 
   # GET /reservations/1

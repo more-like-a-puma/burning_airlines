@@ -68,6 +68,6 @@ u4 = User.create :name => 'Fabio the Jess-star', :email => 'fabio@gmail.com', :p
 # end
 
 Reservation.destroy_all
-r1 = Reservation.create :user_id => u4.id, :flight_id => f1.id, :row => 1, :column => 'A'
-r2 = Reservation.create :user_id => u2.id, :flight_id => f2.id, :row => 1, :column => 'B'
-r3 = Reservation.create :user_id => u4.id, :flight_id => f2.id, :row => 1, :column => 'A'
+r1 = Reservation.create :user_id => u4.id, :flight_id => f1.id, :row => 1, :column => 3
+r2 = Reservation.create :user_id => u2.id, :flight_id => f2.id, :row => 1, :column => 2
+r3 = Reservation.create :user_id => u4.id, :flight_id => f2.id, :row => 1, :column => 3
