@@ -1,20 +1,22 @@
 // SHOW SEARCH RESULTS => FLIGHT COLLECTION
 var app = app || {};
 
-app.searchFormView = Backbone.View.extend({
+app.searchResultsView = Backbone.View.extend({
 
-el: '#origin',
+    // el: '#origin',
 
-initialize: function() {
+    // initialize: function() {
+    //     this.collection = new app.FlightsCollection();
+    //     this.collection.on('click', this.render, this);
+    //     this.collection.fetch();
+    // },
 
-},
+    render: function() {
 
-render: function() {
-  console.log("Initialization searchFormView");
-  // this.collection = new app.FlightsCollection();
-  // this.collection.on('click', this.render, this);
-  // this.collection.fetch();
+        console.log("Rendering searchFormView");
+        // var searchResultsTemplate = $("#origin").html();
+        // this.$el.html(searchResultsTemplate);
 
-}
+    }
 
 });
