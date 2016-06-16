@@ -20,9 +20,10 @@ body {
 }
 
 #main {
+  align-self: center;
   height: 550px;
   width: 900px;
-  margin: 0 auto;
+  margin: auto;
   border: 2px solid #f00;
   border-radius: 25px;
 }

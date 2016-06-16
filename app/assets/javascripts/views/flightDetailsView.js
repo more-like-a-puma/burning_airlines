@@ -16,4 +16,5 @@ app.flightDetailsView = Backbone.View.extend({
 
   }
 
+
 });
