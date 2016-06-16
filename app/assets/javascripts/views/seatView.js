@@ -71,11 +71,12 @@ app.reservationView = Backbone.View.extend({
 
 
 
-        el: "#seatViewResults",
+    },
 
-            render: function() {
-                var reservationInputViewTemplate = $("#reservationInputViewTemplate").html();
-                this.$el.html(secretInputViewTemplate);
-            }
+    el: "#seatViewResults",
+
+    render: function() {
+        var reservationInputViewTemplate = $("#reservationInputViewTemplate").html();
+        this.$el.html(secretInputViewTemplate);
     }
 });
