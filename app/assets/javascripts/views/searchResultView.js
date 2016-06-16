@@ -3,35 +3,24 @@ var app = app || {};
 
 app.searchResultsView = Backbone.View.extend({
 
-    el: '#origin',
+    el: '#searchResultsTabulated',
 
     events: {
+
         "submit": "test"
     },
 
     test: function(event) {
         event.preventDefault();
-        alert("lili");
-    },
-
-    initialize: function() {
-        console.log("Initializing searchResultsView");
-        // this.collection = new app.FlightsCollection();
-        // this.collection.on('add', this.render, this);
-        // this.collection.fetch();
+        console.log("Lile");
     },
 
     render: function() {
 
-        console.log("Rendering searchFormView");
-        // var searchResultsTemplate = $("#origin").html();
-        // this.$el.html(searchResultsTemplate);
+        console.log("searchResultsView should be rendered now");
+        var searchResultsView = $("#searchResultTemplate").html();
+        this.$el.html(searchResultsView);
 
     }
 
 });
-
-// var searchResultView = new app.SearchResultsView({
-//   collection: app.flights
-// })
-// searchResultView.render();
