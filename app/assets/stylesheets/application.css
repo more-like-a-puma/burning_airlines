@@ -230,12 +230,32 @@ body {
 
 #planeRight2 {
   position: absolute;
-  left: 0;
+  left: -450px;
   top: 500px;
 }
 
 .planeRight2 {
+  max-height: 90px;
+}
+
+#planeRight3 {
+  position: absolute;
+  left: -300px;
+  top: 570px;
+}
+
+.planeRight3 {
   max-height: 70px;
+}
+
+#planeRight4 {
+  position: absolute;
+  left: -700px;
+  top: 470px;
+}
+
+.planeRight4 {
+  max-height: 80px;
 }
 
 #planeLeft1 {
@@ -245,17 +265,27 @@ body {
 }
 
 .planeLeft1 {
-  max-height: 70px;
+  max-height: 60px;
 }
 
 #planeLeft2 {
   position: absolute;
-  right: 0;
+  right: -270px;
   top: 380px;
 }
 
 .planeLeft2 {
   max-height: 70px;
+}
+
+#planeLeft3 {
+  position: absolute;
+  right: -400px;
+  top: 240px;
+}
+
+.planeLeft3 {
+  max-height: 100px;
 }
 
 .bump {
@@ -270,7 +300,7 @@ body {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(1800px, 0, 0);
+    transform: translate3d(2400px, 0, 0);
     animation-timing-function: linear;
   }
 }
@@ -287,7 +317,7 @@ body {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-1800px, 0, 0);
+    transform: translate3d(-2100px, 0, 0);
     animation-timing-function: linear;
   }
 }
