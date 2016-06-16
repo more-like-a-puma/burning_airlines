@@ -3,23 +3,29 @@ var app = app || {};
 
 app.searchResultsView = Backbone.View.extend({
 
-    el: '#searchResultsTabulated',
+    el: '#searchForm',
 
     events: {
 
-        "submit": "test"
+        "click button#submit" : "doSearch"
+
     },
 
-    test: function(event) {
+    doSearch: function(events) {
         event.preventDefault();
-        console.log("Lile");
+        this.exeSearch();
     },
+
+    exeSearch: function () {
+        console.log("Fabio");
+    },
+
 
     render: function() {
 
         console.log("searchResultsView should be rendered now");
         var searchResultsView = $("#searchResultTemplate").html();
-        this.$el.html(searchResultsView);
+        $("#searchResultsTabulated").html(searchResultsView);
 
     }
 
