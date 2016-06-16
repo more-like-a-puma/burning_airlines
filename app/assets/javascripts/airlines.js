@@ -1,10 +1,6 @@
-
-
-
-
 $(document).ready(function() {
-  app.reservations = new app.ReservationsCollection();
-  app.flight = new app.FlightsCollection();
+    app.reservations = new app.ReservationsCollection();
+    app.flight = new app.FlightsCollection();
     var flightRouter = new app.planesRouter();
     Backbone.history.start();
     app.flight.fetch();
@@ -13,8 +9,8 @@ $(document).ready(function() {
     app.reservations.fetch();
 
     // Polling
-    window.setInterval(function () {
-      app.reservations.fetch();
+    window.setInterval(function() {
+        app.reservations.fetch();
     }, 1000);
 
 
