@@ -106,7 +106,7 @@ body {
 }
 
 .textHead {
-  height: 90vh;
+  height: 80vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -184,4 +184,29 @@ body {
 .yoProfile {
   margin: 30px;
   font-size: 18px;
+}
+
+.login_page {
+  align-self: center;
+  margin: 0;
+  text-align: center;
+}
+
+.login_page h1, .sign_up_page h1 {
+  font-family: 'Jolly Lodger', cursive;
+  font-size: 70px;
+  color: red;
+}
+
+.sign_up_page {
+  align-self: center;
+  text-align: center;
+  margin: 0;
+}
+
+.new_user input {
+  margin-bottom: 14px;
+  margin-top: 8px;
+  padding: 5px;
+  text-align: center;
 }
