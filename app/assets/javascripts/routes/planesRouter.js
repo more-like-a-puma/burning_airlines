@@ -3,18 +3,18 @@ var app = app || {};
 app.planesRouter = Backbone.Router.extend({
 
     routes: {
-        "" : "showSearchPage",
-        "flight/:id" : "flightDetails"
+        "": "showSearchPage",
+        "flight/:id": "flightDetails",
     },
 
-    showSearchPage: function () {
-      console.log("mmimmi");
-      // var showSearchPage = new app.searchResultsView();
-      // showSearchPage.render();
+    showSearchPage: function() {
+        console.log("mmimmi");
+        var showSearchPage = new app.searchResultsView();
+        showSearchPage.render();
     },
 
-    showFlight: function (id) {
-      console.log( id );
+    showFlight: function(id) {
+        console.log(id + "Jane");
     },
 
     index: function() {
@@ -23,9 +23,9 @@ app.planesRouter = Backbone.Router.extend({
     },
 
     flightDetails: function(id) {
-        console.log("flightDetailsMessage" + id);
-        // var flightDetailsView = new app.flightDetailsView();
-        // flightDetailsView.render();
+        console.log("flightDetailsMessage " + id);
+        var seatViewDetails = new app.reservationView();
+        seatViewDetails.render();
     },
 
     naivgationMessage: function() {
