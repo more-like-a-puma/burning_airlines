@@ -9,8 +9,8 @@ app.planesRouter = Backbone.Router.extend({
 
     showSearchPage: function () {
       console.log("mmimmi");
-      // var showSearchPage = new app.searchResultsView();
-      // showSearchPage.render();
+      var showSearchPage = new app.searchResultsView();
+      showSearchPage.render();
     },
 
     showFlight: function (id) {
