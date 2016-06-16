@@ -169,6 +169,19 @@ body {
 }
 
 .allReservations th, .allReservations td {
-  padding-right: 20px;
+  padding-right: 25px;
   padding-bottom: 15px;
+}
+
+.alignTextLeft {
+  text-align: left;
+}
+
+.headerYo {
+  margin: 30px;
+}
+
+.yoProfile {
+  margin: 30px;
+  font-size: 18px;
 }
