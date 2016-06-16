@@ -3,15 +3,14 @@ var app = app || {};
 app.planesRouter = Backbone.Router.extend({
 
     routes: {
-        "": "showSearchPage",
-        "search" : "showSearchPage",
-        "flights/:id" : "showFlight",
-        "flightDetailsView": "flightDetailsMessage",
-        "navigationView": "naivgationMessage",
-        "reservationView": "reservationMessage",
-        "searchFormView": "searchFormMessage",
-        "searchResultView": "searchResultMessage",
-        "seatView": "seatMessage"
+        "" : "showSearchPage",
+        "flight/:id" : "flightDetails"
+    },
+
+    showSearchPage: function () {
+      console.log("mmimmi");
+      var showSearchPage = new app.searchResultsView();
+      showSearchPage.render();
     },
 
     showFlight: function (id) {
@@ -20,13 +19,13 @@ app.planesRouter = Backbone.Router.extend({
 
     index: function() {
         console.log("index");
-        $("#main").html("<h4>"+"Index");
+        // $("#main").html("<h4>"+"Index");
     },
 
-    flightDetailsMessage: function() {
-        console.log("flightDetailsMessage");
-        var flightDetailsView = new app.flightDetailsView();
-        flightDetailsView.render();
+    flightDetails: function(id) {
+        console.log("flightDetailsMessage" + id);
+        // var flightDetailsView = new app.flightDetailsView();
+        // flightDetailsView.render();
     },
 
     naivgationMessage: function() {
