@@ -190,6 +190,13 @@ body {
   align-self: center;
   margin: 0;
   text-align: center;
+  font-family: 'Anaheim', sans-serif;
+  font-size: 18px;
+}
+
+.login_page label {
+  font-family: 'Anaheim', sans-serif;
+  font-size: 18px;
 }
 
 .login_page h1, .sign_up_page h1 {
@@ -204,9 +211,83 @@ body {
   margin: 0;
 }
 
-.new_user input {
+.new_user input, .login_page input {
   margin-bottom: 14px;
   margin-top: 8px;
   padding: 5px;
   text-align: center;
+}
+
+#planeRight1 {
+  position: absolute;
+  left: -200px;
+  top: 20px;
+}
+
+.planeRight1 {
+  max-height: 70px;
+}
+
+#planeRight2 {
+  position: absolute;
+  left: 0;
+  top: 500px;
+}
+
+.planeRight2 {
+  max-height: 70px;
+}
+
+#planeLeft1 {
+  position: absolute;
+  right: -200px;
+  top: 600px;
+}
+
+.planeLeft1 {
+  max-height: 70px;
+}
+
+#planeLeft2 {
+  position: absolute;
+  right: 0;
+  top: 380px;
+}
+
+.planeLeft2 {
+  max-height: 70px;
+}
+
+.bump {
+  animation: bump 2s infinite;
+  -moz-animation: bump 2s infinite;
+  -webkit-animation: bump 2s infinite;
+  -o-animation: bump 2s infinite;
+}
+
+@keyframes bump {
+  20% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(1800px, 0, 0);
+    animation-timing-function: linear;
+  }
+}
+
+.bumpOther {
+  animation: bumpOther 2s infinite;
+  -moz-animation: bumpOther 2s infinite;
+  -webkit-animation: bumpOther 2s infinite;
+  -o-animation: bumpOther 2s infinite;
+}
+
+@keyframes bumpOther {
+  20% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1800px, 0, 0);
+    animation-timing-function: linear;
+  }
 }
