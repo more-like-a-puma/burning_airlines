@@ -190,6 +190,13 @@ body {
   align-self: center;
   margin: 0;
   text-align: center;
+  font-family: 'Anaheim', sans-serif;
+  font-size: 18px;
+}
+
+.login_page label {
+  font-family: 'Anaheim', sans-serif;
+  font-size: 18px;
 }
 
 .login_page h1, .sign_up_page h1 {
@@ -204,9 +211,113 @@ body {
   margin: 0;
 }
 
-.new_user input {
+.new_user input, .login_page input {
   margin-bottom: 14px;
   margin-top: 8px;
   padding: 5px;
   text-align: center;
+}
+
+#planeRight1 {
+  position: absolute;
+  left: -200px;
+  top: 20px;
+}
+
+.planeRight1 {
+  max-height: 70px;
+}
+
+#planeRight2 {
+  position: absolute;
+  left: -450px;
+  top: 500px;
+}
+
+.planeRight2 {
+  max-height: 90px;
+}
+
+#planeRight3 {
+  position: absolute;
+  left: -300px;
+  top: 570px;
+}
+
+.planeRight3 {
+  max-height: 70px;
+}
+
+#planeRight4 {
+  position: absolute;
+  left: -700px;
+  top: 470px;
+}
+
+.planeRight4 {
+  max-height: 80px;
+}
+
+#planeLeft1 {
+  position: absolute;
+  right: -200px;
+  top: 600px;
+}
+
+.planeLeft1 {
+  max-height: 60px;
+}
+
+#planeLeft2 {
+  position: absolute;
+  right: -270px;
+  top: 380px;
+}
+
+.planeLeft2 {
+  max-height: 70px;
+}
+
+#planeLeft3 {
+  position: absolute;
+  right: -400px;
+  top: 240px;
+}
+
+.planeLeft3 {
+  max-height: 100px;
+}
+
+.bump {
+  animation: bump 2s infinite;
+  -moz-animation: bump 2s infinite;
+  -webkit-animation: bump 2s infinite;
+  -o-animation: bump 2s infinite;
+}
+
+@keyframes bump {
+  20% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(2400px, 0, 0);
+    animation-timing-function: linear;
+  }
+}
+
+.bumpOther {
+  animation: bumpOther 2s infinite;
+  -moz-animation: bumpOther 2s infinite;
+  -webkit-animation: bumpOther 2s infinite;
+  -o-animation: bumpOther 2s infinite;
+}
+
+@keyframes bumpOther {
+  20% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2100px, 0, 0);
+    animation-timing-function: linear;
+  }
 }
