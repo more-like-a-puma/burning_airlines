@@ -1,10 +1,10 @@
 
-app.flight = new app.FlightsCollection();
+
 
 
 $(document).ready(function() {
   app.reservations = new app.ReservationsCollection();
-
+  app.flight = new app.FlightsCollection();
     var flightRouter = new app.planesRouter();
     Backbone.history.start();
     app.flight.fetch();
