@@ -33,7 +33,10 @@ app.searchResultsView = Backbone.View.extend({
         $("#searchResultsTabulated").html(searchResultsView);
         app.origin = $("input[name='origin']").val().toUpperCase();
         app.destination = $("input[name='destination']").val().toUpperCase();
-
+        app.searchResult = app.flight.where({
+            origin: app.origin,
+            destination: app.destination
+        });
         app.renderSearchResults = new app.auxSearchResultView();
         app.renderSearchResults.render();
     }

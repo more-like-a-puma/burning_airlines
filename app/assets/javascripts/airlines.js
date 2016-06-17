@@ -1,9 +1,17 @@
 $(document).ready(function() {
+
     app.reservations = new app.ReservationsCollection();
+
     app.flight = new app.FlightsCollection();
+
     var flightRouter = new app.planesRouter();
-    Backbone.history.start();
-    app.flight.fetch();
+
+
+    app.flight.fetch().done(function() {
+
+        Backbone.history.start();
+        
+    });
 
     // Wait until the secretsCollection has finished fetching
     app.reservations.fetch();
