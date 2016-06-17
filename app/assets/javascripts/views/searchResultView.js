@@ -37,6 +37,11 @@ app.searchResultsView = Backbone.View.extend({
             origin: app.origin,
             destination: app.destination
         });
+
+        // var aux = this;
+        // aux.template = _.template($("auxSearchResultTemplate").html());
+        // this.aux.template.render();
+
         app.renderSearchResults = new app.auxSearchResultView();
         app.renderSearchResults.render();
     }
