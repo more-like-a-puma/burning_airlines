@@ -13,6 +13,7 @@ class ReservationsController < ApplicationController
     end
     #@user = User.find(params[:id])
     @alphabet = ("A".."Z").to_a
+    @flightshow = @flights.where(params[:flight_id])
   end
 
   # GET /reservations/1
